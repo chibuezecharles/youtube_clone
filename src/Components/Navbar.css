@@ -1,0 +1,386 @@
+/* Navbar styling  starts here*/
+
+.navbar_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 20px; */
+    width: 100%;
+  }
+  
+  .logo_container, .search_container, .youtube_container, 
+  .search_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo_container{
+    gap: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger{
+    height: 28px;
+    width: 28px;
+    margin: 8px;
+  }
+  
+  .hamburger_container:hover, .microphone_container:hover,
+  .add_video_icon_container:hover, .notify_icon_container:hover{
+    background-color: #3c3c3c;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .youtube_icon{
+    color: #f00;
+    height: 35px;
+    width: 35px;
+  }
+  
+
+  .logo_container p{
+    font-weight: 700;
+  }
+  
+  .sup{
+    font-weight: 400;
+    font-size: 10px;
+  }
+
+
+  .search_icon1{
+    position: absolute;
+    left:375px;
+    height: 20px;
+    width: 20px;
+    display: none;
+  } 
+
+  .show_search{
+    display: inline-flex;
+  }
+
+  .search_bar, .search_bar1{
+    display: flex;
+    align-items: center;
+  }
+ 
+  
+  .search_bar input{
+    width: 500px;
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+    border: 0.5px solid #3c3c3c;
+    outline: none;
+    background-color: transparent;
+    padding: 0 10px;
+    color: #ffff;
+
+  }
+
+  .search_bar1 input{
+    width: 550px;
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+    border: 0.5px solid #3c3c3c;
+    outline: none;
+    background-color: transparent;
+    padding: 0 10px;
+    color: #ffff;
+    padding-left: 50px;
+  }
+  
+  .search_bar input:active, .search_bar1 input:active,
+  .search_bar input:focus, .search_bar1 input:focus{
+   outline: 0.5px solid #065fd4;
+  
+  }
+  
+  .search_icon_container{
+    height: 40px;
+    width: 60px;
+    border-radius: 0 20px 20px 0;
+    background-color: #3c3c3c;
+    display: flex;
+    outline: 0.5px solid #3c3c3c;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .search_container{
+    gap: 10px;
+  }
+  
+  .search_icon{
+    height: 20px;
+    width: 20px;
+  
+  }
+  
+  .microphone_container{
+    background-color: hsl(0, 0%, 18.82%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+  }
+  
+  .microphone_icon{
+    height: 20px;
+    width: 20px;
+  }
+  
+  .create_notify_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+   .notify_icon, .add_video_icon{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+  
+  .avatar_icon{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .tooltip{
+    position: relative;
+    display: inline-block;
+    max-width: 700px;
+  }
+  
+  .tooltip_text{
+    visibility: hidden;
+    color: #ffff;
+    background-color: #737373;
+    padding: 7px 15px;
+    border-radius: 5px;
+    position: absolute;
+    top: 70px;
+    z-index: 1;
+  }
+  
+  .tlp_width{
+    width: 200px;
+  }
+  
+  .tooltip:hover .tooltip_text{
+   visibility: visible;
+  }
+
+  .mobile_nav_container, .mobile_nav_container2{
+    display:none ;
+  }
+
+  
+  
+  /* Navbar styling  ends here*/
+
+
+
+  /* Responsive starts here styling  starts here*/
+
+  @media screen and (max-width: 1300px){
+    .search_bar1 input{
+      padding-left: 60px;
+    }
+
+    .search_icon1{
+      left:350px;
+    }
+     
+  }
+
+  @media screen and (max-width: 1100px){
+    .search_bar1 input{
+      padding-left: 60px;
+    }
+
+    .search_icon1{
+      left:210px;
+    }
+     
+  }
+
+
+  @media screen and (max-width: 800px){
+
+    .navbar_container{
+      width: 100%;
+    }
+
+    .hamburger{
+      height: 22px;
+      width: 22px;
+      margin: 6px;
+    }
+
+    .youtube_icon{
+      height: 25px;
+      width: 25px;
+    }
+
+    .logo_container p{
+      font-weight: 500;
+    }
+    
+  
+    .logo_container p{
+      font-weight: 500;
+    }
+
+    .search_bar input{
+      width: 350px;
+      height: 30px;
+    }
+
+    .search_icon_container{
+      height: 30px;
+      width: 40px;
+    }
+
+    .microphone_icon{
+      height: 15px;
+      width: 15px;
+    }
+
+    .notify_icon, .add_video_icon{
+      width: 20px;
+      height: 20px;
+      margin: 3px;
+    }
+
+    .avatar_icon{
+      width: 25px;
+      height: 25px;
+    }
+
+    .search_icon1{
+      left:200px;
+
+    } 
+
+    .search_bar input{
+      width: 300px;
+      height: 30px;
+  
+    }
+  
+    .search_bar1 input{
+      width: 350px;
+      height: 30px;
+      padding-left: 40px;
+    }
+
+  }
+
+
+  @media screen and (max-width:500px) {
+    .navbar_container{
+      display: none;
+    }
+
+
+    .mobile_nav_container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px ;
+      border-bottom: 1px solid #717171;
+    }
+
+    .mobile_youtube_container, .search_avartar_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mobile_youtube_icon{
+      color: #f00;
+      height: 35px;
+      width: 35px;
+    }
+
+    .mobile_youtube_icon p{
+      font-weight: 700;
+    }
+    
+    .sup{
+      font-weight: 400;
+      font-size: 10px;
+    }
+    .search_avartar_container{
+      gap: 20px;
+    }
+
+    .mobile_search_icon{
+      height: 25px;
+      width: 25px;
+    } 
+    
+    .mobile_avatar_icon{
+      width: 30px;
+      height: 30px;
+    }
+
+
+      /* Nav 2 Styling */
+
+    .mobile_nav_container2{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      display: none;
+    }
+
+    .mobile_nav2_backarrow_icon, .mobile_nav2_search_icon
+     {
+      width: 30px;
+      height: 25px;
+     }
+
+     .mobile_nav2_microphone_icon{
+      width: 25px;
+      height: 20px;
+     }
+
+     .mobile_nav2_input_search_container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+     }
+
+     .mobile_nav2_input_search_container{
+      background-color: #3c3c3c;
+      border-radius: 20px;
+      width: 270px;
+      padding: 5px 10px ;
+     }
+
+     .mobile_nav2_input_search_container input{
+      background-color: #3c3c3c;
+      border: none;
+      outline: none;
+      width: 250px;
+      font-size: 17px;
+      color: #ffff;
+
+     }
+
+     .mobile_nav2_microphone_container{
+        background-color: #3c3c3c;
+        border-radius: 50%;
+        padding: 5px;
+     }
+
+  }

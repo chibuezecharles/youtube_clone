@@ -1,0 +1,131 @@
+.acct_dropdown_container{
+    width: 25%;
+    background-color: #3c3c3c;
+    border-radius:10px ;
+    position: absolute;
+    right: 60px;
+    top: 10px;
+}
+
+.dropdown_section1{
+    padding: 10px 20px;
+    width: 25%;
+    display: flex;
+    gap: 10px;
+    border-radius: 10px 10px 0 0;
+    position: fixed;
+    background-color: #3c3c3c;
+    border-bottom: 1px solid #717171;
+}
+
+.avatar_txt{
+    display: flex;
+    flex-direction: column; 
+    gap: 5px;
+}
+
+.manage_link{
+    text-decoration: none;
+    color: #065fd4;
+    padding-top: 10px;
+}
+
+.dropdown_rule{
+    border: 1px solid #717171;
+    margin: 5px 0;
+}
+
+.dropdown_stage2{
+    height: 80vh;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.dropdown_stage2:hover{
+    overflow-y: scroll;
+}
+
+
+.dropdown_stage2::-webkit-scrollbar {
+    width:8px;
+  }
+  .dropdown_stage2::-webkit-scrollbar-track {
+    /* -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);  */
+    border-radius:5px;
+
+  }
+  .dropdown_stage2::-webkit-scrollbar-thumb {
+    /* border-radius:5px; */
+    -webkit-box-shadow: inset 0 0 6px #737373;
+    background-color: #737373;
+  
+  }
+
+.dropdown_section_common{
+    padding: 10px 20px;
+}
+
+.stage2_common1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0 ;
+}
+
+.stage2_commonbig1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 ;
+}
+
+.stage2_commonbig2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dropdown_icon_common{
+    height: 25px;
+    width: 25px;
+}
+
+
+/* Responsiveness */
+
+@media screen and (max-width: 1030px) {
+    .acct_dropdown_container{
+        width: 35%;
+        right: 50px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .acct_dropdown_container{
+        width: 43%;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .acct_dropdown_container{
+        font-size: 13px;
+    }
+
+    .dropdown_section1{
+        width: 70%;
+    }
+
+    .acct_dropdown_container{
+        width: 70%;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .acct_dropdown_container{
+        width: 80%;
+        right: 5px;
+    }
+}

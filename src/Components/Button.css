@@ -1,0 +1,121 @@
+/* Button styling starts here */
+
+.button_main_container{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 80%;
+    position: fixed;
+    top: 23px;
+    /* right: 0; */
+    margin-top: 26px;
+    background-color: #212121;
+    padding: 25px 0 30px 0 ;
+    overflow: scroll;
+    transition: 0.5s;
+  }
+
+  .button_main_container_adjust{
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 90%;
+    position: fixed;
+    top: 23px;
+    /* right: 0; */
+    margin-top: 20px;
+    background-color: #212121;
+    padding: 25px 0 30px 0 ;
+    overflow: scroll;
+    transition-duration: 1s;
+    transition-delay: 0.3s;
+  }
+
+
+
+  .button_main_container::-webkit-scrollbar, .button_main_container_adjust::-webkit-scrollbar {
+    width:0;
+  }
+  .button_main_container::-webkit-scrollbar-track,  .button_main_container_adjust::-webkit-scrollbar-track {
+    /* -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);  */
+    border-radius:5px;
+
+  }
+  .sidebar_container::-webkit-scrollbar-thumb, .button_main_container_adjust::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    -webkit-box-shadow: inset 0 0 6px transparent;
+    background-color: transparent;
+  
+  }
+
+
+  .button_container{
+    background-color: #3c3c3c;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    font-size: 14px;
+  }
+  
+  .button_container:hover{
+    background-color: #717171;
+  }
+  
+  
+  .button_tooltip{
+    position: relative;
+    display: flex;
+    max-width: 300px;
+    
+  }
+  
+  .button_tooltip_text{
+    visibility: hidden;
+    color: #ffff;
+    background-color: #3c3c3c;
+    border: 1px solid #737373;
+    padding: 4px 7px;
+    position: absolute;
+    left: 30px;
+    top: 40px;
+    z-index: 1;
+  }
+  
+  .button_tooltip:hover .button_tooltip_text{
+    visibility: visible;
+  }
+  
+
+  /* Button styling Ends here */
+
+  /* Responsiveness*/
+  @media screen and (max-width: 800px){
+    .button_main_container{
+      width: 100%;
+      
+    }
+  
+    .button_main_container_adjust{
+      width: 100%;
+    }
+  
+
+  }
+
+
+  @media screen and (max-width: 500px){
+    
+    .button_main_container{
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      margin-top: 30px;
+      padding: 15px 10px 30px 10px;
+      overflow-y: scroll;
+      gap: 10px;
+    }
+  }

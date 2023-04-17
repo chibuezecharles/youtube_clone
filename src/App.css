@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #212121;
+  color:#ffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.main_navbar_container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0; 
+  z-index: 1;
+  background-color: #212121;
+  padding: 10px;
+}
+
+.card_btn_stiff{
+  position: fixed;
+ overflow: hidden;
+} 
+
+.navbar_stiff{
+  position: fixed;
+ width: 98%;
+ overflow: hidden;
+} 
+
+.sidebar_stiff{
+  position: fixed;
+ overflow: hidden;
+} 
+
+.shorts_heading_common{
+  /* border: 1px solid red; */
+  padding-top: 53px;
+  text-align: center
+}
+
+.shorts_container_padding{
+  padding: 0 50px;
+}
+
+@media screen and (max-width: 500px){
+  .shorts_heading_common{
+    padding-top: 0px;
+  }
+
+  .shorts_container_padding{
+    padding: 0 ;
+  }
+}
+

@@ -1,0 +1,252 @@
+ /* Sidebar styling  Starts here*/
+.main_sidebar_container{
+  width: 20%;
+}
+
+.main_sidebar_container_column{
+  width: 10%;
+}
+
+.sidebar_container{
+    padding: 10px 20px;
+    height: 100vh;
+    width: 20%; 
+    position: fixed;
+    left: 0;
+    top: 40px;
+    right: 0;
+    margin-top: 20px;
+    transition: 1s;
+    transition-delay: 0.3s;
+  }
+
+  
+  .sidebar_container:hover{
+    overflow-y: scroll ;
+  }
+  
+  
+  .sidebar_container::-webkit-scrollbar {
+    width:8px;
+  }
+
+  
+  .sidebar_container::-webkit-scrollbar-track {
+    /* -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);  */
+    border-radius:5px;
+  }
+
+  .sidebar_container::-webkit-scrollbar-thumb {
+    border-radius:5px;
+    -webkit-box-shadow: inset 0 0 6px #737373;
+    background-color: #737373 !important;
+  
+  }
+  
+  .sidebar_common{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  /* sidebar column styling starts here*/
+
+  .sidebar_container_column{
+    width: 10%;
+    padding: 10px 20px;
+    position: fixed;
+    left: 0;
+    top: 55px;
+    right: 0;
+    transition: 0.5s;
+  }
+
+  .sidebar_column_common{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0;
+    margin: 5px 0;
+    font-size: 10px;
+    transition: 0.5s;
+    width: 65px;
+  }
+
+
+  .sidebar_column_common:hover{
+    background-color: #3c3c3c;
+    border-radius: 10px;
+  }
+
+  .show_none{
+    display: none;
+  }
+
+  .sidebar_tooltip_text_column{
+    visibility: hidden;
+    color: #ffff;
+    background-color: #3c3c3c;
+    border: 1px solid #737373;
+    padding: 5px 10px;
+    position: absolute;
+    left: 40px;
+    top: 60px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.9s ease-in;
+  }
+
+
+   /* sidebar column styling ends here*/
+  
+  .sidebar_common:hover, .sidebar_common:active , .home_bg{
+    background-color: #3c3c3c;
+    border-radius: 10px;
+  }
+  
+  .sidebar_icon_common{
+    height: 25px;
+    width: 25px;
+    color: #ffff;
+  }
+  
+  .section1 a.active, .section2 a.active{
+    background-color: #3c3c3c;
+    border-radius: 10px; 
+  }
+  
+  .hr_rule{
+    border: 1px solid #3c3c3c ;
+    margin:  10px 0 ;
+  }
+  
+  .sidebar_tooltip{
+    position: relative;
+    display: flex;
+  }
+  
+  .sidebar_tooltip_text{
+    visibility: hidden;
+    color: #ffff;
+    background-color: #3c3c3c;
+    border: 1px solid #737373;
+    padding: 5px 7px;
+    position: absolute;
+    left: 140px;
+    top: 40px;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.9s ease-in;
+  }
+
+  .red_color{
+    color: #f00;
+  }
+  
+  .sidebar_tooltip:hover .sidebar_tooltip_text, .sidebar_tooltip:hover .sidebar_tooltip_text_column{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .sbtlp_widthbig{
+    left: 100px;
+  }
+  
+  .sbtlp_widthbig2{
+    left: 80px;
+    width: 130px;
+  }
+  
+  .sbtlp_widthbig3{
+    left: 60px;
+    width: 140px;
+  }
+  
+  .sbtlp_widthbig4{
+    left: 50px;
+    width: 160px;
+  }
+  
+  .sbtlp_widthbig5{
+    left: 40px;
+    width: 175px;
+  }
+  
+  .section7{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+    color: #aaa;
+    font-weight: 500;
+    font-size: 13px;
+  }
+  
+  .terms_privacy{
+    margin-top: 20px;
+  }
+  
+  .at_google{
+    color: #717171;
+    margin: 20px 0 80px 0;
+  }
+  
+
+  .sidebar_linkstyle{
+    text-decoration: none;
+    color: #ffff;
+  }
+
+  .mobile_sidebar_container{
+    display: none;
+  }
+  
+  /* Sidebar styling  Ends here*/
+
+
+  /* Sidebar Responsiveness*/
+  @media screen and (max-width:800px){
+    .sidebar_container{
+      width: 20%; 
+    }
+
+    .sidebar_container_column{
+      width: 15%;
+    }
+
+  }
+
+
+  @media screen and (max-width:500px){
+    .sidebar_container{
+      display: none;
+    }
+
+    .mobile_sidebar_container{
+      border-top: 1px solid #717171;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      position: fixed; 
+      bottom: 0;
+      width: 100%;
+      background-color: #212121;
+    }
+  
+    .mobile_sidebar_common{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+      gap: 10px;
+      font-size: 10px;
+      transition: 0.5s;
+    
+    }
+  }
